@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÍNH LÃI SUẤT NGÂN HÀNG</title>
+    <Style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #58257b;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #e9d8f4;
+            border: none;
+            color: #58257b;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </Style>
+
+</head>
+
+<body>
+    <h1>TÍNH LÃI SUẤT NGÂN HÀNG</h1>
+    <p>Lãi suất ngân hàng: 6.5%/năm</p>
+    <br>
+    <table>
+        <tr>
+            <th>Nhập số tiền cần gửi</th>
+            <th><input type="text" id="money"></th>
+        </tr>
+        <tr>
+            <th>Số tháng</th>
+            <th><input type="text" id="month"></th>
+        </tr>
+        <tr>
+            <th><button onclick="Lai_suat()">Xem kết quả</button></th>
+            <th></th>
+        </tr>
+    </table>
+    <br>
+    <h1>SỐ TIỀN BẠN NHẬN ĐƯỢC</h1>
+    <table>
+        <tr>
+            <th>Tổng tiền nhận được</th>
+            <th>
+                <h1 id="resultsum"></h1>
+            </th>
+        </tr>
+        <tr>
+            <th>Lãi (tính riêng)</th>
+            <th>
+                <h1 id="resultinter"></h1>
+            </th>
+        </tr>
+    </table>
+    <script src="Lai_suat.js"></script>
+</body>
+
+</html>
